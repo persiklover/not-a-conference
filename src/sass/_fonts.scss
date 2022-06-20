@@ -3,10 +3,10 @@ $fonts: "../fonts/";
 @font-face {
   font-family: "Futura PT";
   src: 
-    local("Futura PT Cond Book"),
-    local("FuturaPTCond-Book"),
-    url($fonts + "FuturaPTCond-Book.woff2") format("woff2"),
-    url($fonts + "FuturaPTCond-Book.woff") format("woff");
+    local("Futura PT Book"),
+    local("FuturaPT-Book"),
+    url($fonts + 'FuturaPT-Book.woff2') format("woff2"),
+    url($fonts + 'FuturaPT-Book.woff') format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
