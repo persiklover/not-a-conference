@@ -12,7 +12,7 @@
   }
 
   > * {
-    margin: 2.5rem 3.5rem;
+    margin: 2.5rem 1.5rem;
 
     @include sm {
       margin: 0;
@@ -22,7 +22,7 @@
 }
 
 .speaker {
-  width: 18.2rem;
+  width: 21rem;
 
   @include sm {
     width: 47%;
@@ -50,6 +50,7 @@
 
   &-name {
     margin: 0;
+    width: min-content;
 
     font-weight: 500;
   }

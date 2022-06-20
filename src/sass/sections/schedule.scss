@@ -20,6 +20,8 @@
     column-count: 2;
     column-gap: 10em;
 
+    font-weight: 500;
+
     @include sm {
       column-count: unset;
       column-gap: unset;
