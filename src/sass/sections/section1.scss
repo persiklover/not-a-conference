@@ -1,0 +1,61 @@
+.section1 {
+  position: relative;
+  padding: 5rem 0;
+
+  @include sm {
+    padding: 1rem 0;
+  }
+
+  &-main-text {
+    position: relative;
+
+    margin-bottom: 2em;
+    width: 50%;
+    margin-left: auto;
+
+    @include sm {
+      margin-left: 0;
+      margin-bottom: -10em;
+      width: unset;
+
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -28.7em;
+      top:     -1em;
+
+      width:    40rem;
+      height: 37.2rem;
+      background: url(../img/purple-ball.png) no-repeat center / cover;
+  
+      @include no-select();
+
+      @include sm {
+        left: unset;
+        right: -30em;
+        top:   -60em;
+      }
+    }
+  }
+
+  &__scrolldown {
+    @include sm {
+      width:  11.2em;
+      height: 11.7em;
+
+      position: relative;
+      top:   7em;
+      left: 13em;
+
+      @include no-select();
+
+      img {
+        display: none;
+      }
+    }
+  }
+}

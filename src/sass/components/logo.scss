@@ -1,0 +1,19 @@
+.nac-logo {
+  height: 14.72rem;
+}
+
+.ape-logo {
+  height: 4.893rem;
+
+  @include sm {
+    height: 3.044rem;
+  }
+}
+
+.ti-logo {
+  height: 3.5rem;
+
+  @include sm {
+    height: 2.178rem;
+  }
+}

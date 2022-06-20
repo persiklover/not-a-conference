@@ -1,0 +1,52 @@
+.footer {
+  padding: 20rem 0 22rem;
+
+  @include sm {
+    padding: 0rem 0 4rem;
+  }
+
+  &-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__nac-logo {
+    margin-bottom: 9rem;
+
+    @include sm {
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__ape-logo {
+    height: 6.2rem;
+
+    @include sm {
+      height: 3.7rem;
+    }
+  }
+
+  &__ti-logo {
+    margin-right: -3em;
+
+    height: 4.2rem;
+
+    @include sm {
+      height: 2.9rem;
+    }
+  }
+
+  &-subfooter {
+    display: flex;
+    justify-content: center;
+
+    > * + * {
+      margin-left: 7.7rem;
+
+      @include sm {
+        margin-left: 4.5rem;
+      }
+    }
+  }
+}

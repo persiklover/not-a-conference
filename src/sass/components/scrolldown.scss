@@ -1,0 +1,80 @@
+.scrolldown {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+
+  img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    margin-top: -.65em;
+    width: 8.6rem;
+
+    @include sm {
+      width: 4.6rem;
+    }
+  }
+
+  &--star {
+    width:  30.6rem;
+    height: 30.2rem;
+  
+    background: url(../img/star.png) no-repeat center / cover;
+
+    @include sm {
+      width:  15.9rem;
+      height: 15.7rem;
+    }
+  }
+  
+  &--sharp-ball {
+    width:  18.9rem;
+    height: 19.7rem;
+    
+    background: url(../img/sharp-ball.png) no-repeat center / cover;
+    
+    img {
+      margin-top: 0;
+    }
+  }
+  
+  &--green-ball {
+    width:  20.5rem;
+    height: 21.4rem;
+    
+    background: url(../img/green-ball.png) no-repeat center / cover;
+
+    @include sm {
+      margin-left: -5em;
+      margin-top: -14em;
+
+      position: relative;
+      z-index: -1;
+      top: 11em;
+
+      img {
+        display: none;
+
+        @include no-select();
+      }
+    }
+
+    img {
+      margin-top: 0;
+    }
+  }
+
+  &--purple-ball {
+    margin-top: -2em;
+    width:  25.6rem;
+    height: 24.6rem;
+    
+    background: url(../img/purple-ball.png) no-repeat center / cover;
+
+    img {
+      margin-top: .6em;
+    }
+  }
+}

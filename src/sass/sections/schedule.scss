@@ -1,0 +1,47 @@
+.schedule {
+  margin: 0 3em;
+
+  @include sm {
+    margin: 0;
+  }
+
+  &-title {
+    margin-bottom: 3.7rem;
+
+    text-align: center;
+    font-weight: 400;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    column-count: 2;
+    column-gap: 10em;
+
+    @include sm {
+      column-count: unset;
+      column-gap: unset;
+
+      text-align: center;
+    }
+
+    > * + * {
+      margin-top: 1.5em;
+    }
+  }
+
+  .company {
+    color: #A5DE00;
+  }
+
+  .name {
+    color: #831BFF;
+  }
+
+  .company,
+  .name {
+    font-weight: 500;
+  }
+}

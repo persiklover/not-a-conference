@@ -1,0 +1,62 @@
+.tab {
+
+  &-header {
+    display: flex;
+    justify-content: space-around;
+
+    @include sm {
+      justify-content: space-between;
+
+      :first-child {
+        order: 2;
+      }
+    }
+  }
+
+  &-content {
+    margin-top: 6.5rem;
+
+    display: flex;
+    justify-content: space-around;
+
+    > * {
+      width: 31em;
+    }
+  }
+
+  &-control {
+    background: none;
+    padding: 0;
+    border: 0;
+    min-width: 10ch;
+
+    font-family: "Vast XXXL", sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+  
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    @include sm {
+      min-width: unset;
+
+      font-size: 1.4rem;
+
+      &.active {
+        border: .1rem solid #565656;
+        padding: 1.4rem 2rem;
+        
+        color: #828282;
+        
+        &:last-child {
+          margin-left: -1.4em;
+        }
+        
+        &:first-child {
+          margin-left: 1.2em;
+        }
+      }
+    }
+  }
+}

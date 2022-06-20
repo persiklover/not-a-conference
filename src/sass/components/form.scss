@@ -1,0 +1,25 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  input {
+    height: 4.7rem;
+    margin-bottom: 1.8rem;
+    padding: 1rem;
+  
+    border: .1rem solid #3084F4;
+    text-transform: uppercase;
+    text-align: center;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  
+  &-submit-btn {
+    margin-top: 5.5rem;
+
+    align-self: center;
+    text-transform: uppercase;
+  }
+}

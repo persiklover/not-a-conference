@@ -1,0 +1,36 @@
+.nav {
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    > * + * {
+      margin-left: 4.5rem;
+
+      @include sm {
+        margin-left: 0;
+        margin-top: 1.8rem;
+      }
+    }
+
+    @include sm {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__hint {
+    margin-top: .5rem;
+  }
+}

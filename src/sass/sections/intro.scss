@@ -1,0 +1,21 @@
+.intro {
+  padding: 3rem 0;
+  text-align: center;
+
+  @include sm {
+    padding: 4.1rem 0 2.75rem;
+  }
+
+  &-title {
+    margin: 0;
+    margin-bottom: 3.5rem;
+
+    @include sm {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &-address {
+    font-style: normal;
+  }
+}

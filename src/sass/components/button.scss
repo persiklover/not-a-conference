@@ -1,0 +1,22 @@
+.button {
+  min-width: 20.4rem;
+  min-height: 4.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: .5rem solid #3084F4;
+  padding: .65rem 1rem;
+
+  text-align: center;
+
+  @include sm {
+    font-size: 1.3rem;
+  }
+
+  &--gradient {
+    background: linear-gradient(90deg, #EC26F4 0%, #45AEFB 100%);
+    border: none;
+    color: white;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,37 @@
+$fonts: "../fonts/";
+
+@font-face {
+  font-family: "Futura PT";
+  src: 
+    local("Futura PT Cond Book"),
+    local("FuturaPTCond-Book"),
+    url($fonts + "FuturaPTCond-Book.woff2") format("woff2"),
+    url($fonts + "FuturaPTCond-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: 
+    local("Futura PT Demi"),
+    local("FuturaPT-Demi"),
+    url($fonts + "FuturaPT-Demi.woff2") format("woff2"),
+    url($fonts + "FuturaPT-Demi.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Vast XXXL";
+  src: 
+    local("Vast XXXL Black"),
+    local("VastXXXL-Black"),
+    url($fonts + "VastXXXL-Black.woff2") format("woff2"),
+    url($fonts + "VastXXXL-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
