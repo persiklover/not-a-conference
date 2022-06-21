@@ -46,3 +46,38 @@ document.querySelectorAll('.tab-control').forEach((element, index) => {
     tabs[index].hidden = false;
   });
 });
+
+$('.form').submit(function(e) {
+  e.preventDefault();
+
+  let invalid = false;
+  const inputs = $(this).find('input');
+  inputs.each((index, element) => {
+    if (element.value === '') {
+      invalid = true;
+    }
+  });
+
+  if (invalid) {
+    $(this).attr('data-invalid', invalid);
+  }
+  else {
+    const data = $(this).serializeArray().reduce(function(obj, item) {
+      obj[item.name] = item.value;
+      return obj;
+    }, {});
+    data.type = $(this).attr('data-name');
+
+    $.ajax({
+      type: 'GET',
+      url:  'google-sheets.php',
+      data,
+      complete: response => {
+        $(this).attr('data-success', !invalid);
+      },
+      error: error => {
+        console.error(error);
+      }
+    });
+  }
+});
