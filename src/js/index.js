@@ -34,6 +34,10 @@ addEventListener('resize', onResize);
 onResize();
 
 document.querySelectorAll('.tab-control').forEach((element, index) => {
+  if (innerWidth > 768) {
+    return;
+  }
+
   element.addEventListener('click', e => {
     document.querySelectorAll('.tab-control').forEach(control => {
       control.classList.remove('active');
