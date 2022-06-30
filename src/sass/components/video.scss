@@ -1,0 +1,17 @@
+.video {
+  margin: 0 auto;
+  margin-top: 4em;
+
+  text-align: center;
+
+  iframe {
+    display: block;
+    width:    56rem * 1.25;
+    height: 31.5rem * 1.25;
+
+    @include sm {
+      width:  32rem;
+      height: 18rem;
+    }
+  }
+}
